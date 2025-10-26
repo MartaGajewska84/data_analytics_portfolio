@@ -10,13 +10,15 @@ Each project focuses on a specific **business domain** (such as HR, sales, or ma
 | Project | Description | Tools |
 |----------|--------------|--------|
 | [HR Analytics Report](./HR_analytics_report) | Workforce insights report analyzing headcount, demographics, and attrition trends. | Power BI, DAX, Power Query |
-
+| [TikTok Analytics Report](./TikTok_analytics_report) | End-to-end data warehouse and BI solution analyzing TikTok video engagement — including views, likes, shares, and comments — using Snowflake and Power BI. | Snowflake, SQL, Power BI |
 ---
 
 ## 🛠️ Tools & Technologies
 - **Power BI** — data modeling and dashboard creation  
 - **Power Query (M)** — data cleaning and transformation  
-- **DAX** — measures and KPIs  
+- **DAX** — measures and KPIs
+- **SQL** — data warehouse modeling, ETL, and analytics  
+- **Snowflake** — cloud data warehouse for scalable data processing  
 
 ---
 
