@@ -92,16 +92,35 @@ Sample analytical validation:
 
 ---
 
+## 4. Presentation Layer (Snowflake – `PRESENTATION` Schema)
+
+To feed Power BI with clean, analysis-ready data, the project exposes a set of **read-only views** in the `PRESENTATION` schema.  
+These views **aggregate and simplify metrics** from the DW star schema, ensuring that the BI layer requires little to no transformation.
+
+### Views Provided
+
+| View Name | Description |
+|------------|-------------|
+| `VW_TOTAL_VIDEOS` | Total number of unique videos. |
+| `VW_TOTAL_VIEWS_BY_CLAIM` | Total view count and video count by claim status. |
+| `VW_TRENDS_AUTHOR_BAN` | Counts of videos by claim status × author ban status. |
+| `VW_CLAIM_VERIFICATION` | Counts of videos by claim status × verification status. |
+| `VW_LIKE_COUNT_BY_AUTHOR_BAN` | Raw like values by author ban status (for histogram binning). |
+| `VW_OPINION_LIKES` / `VW_CLAIM_LIKES` | Total likes for opinion / claim videos. |
+| `VW_OPINION_COMMENTS` / `VW_CLAIM_COMMENTS` | Total comments for opinion / claim videos. |
+
+![Views in Snowflake](visuals/views.png)
+
+---
+
+📌 **Power BI Integration:**  
+Power BI connects directly to these views (**Import mode recommended**) to build visuals **without additional DAX measures**, if preferred.
+
+---
+
 ## 🧠 Power BI Report Overview *(Placeholder)*
 > 🔧 The Power BI report connects directly to the **Snowflake PRESENTATION schema** and visualizes insights across engagement, author verification, and claim types.  
-
-### Planned Pages:
-1. **Overview Dashboard** – Key KPIs such as total videos, total views, and engagement metrics.  
-2. **Engagement Breakdown** – Comparison of claim vs. opinion content performance.  
-3. **Author Analysis** – Impact of verification and ban status on engagement.  
-4. **Trend Analysis** – Patterns in likes, views, and comments.  
-
-*(Preview images will be added here once the Power BI report is finalized.)*
+ 
 
 ---
 
