@@ -101,13 +101,19 @@ These views **aggregate and simplify metrics** from the DW star schema, ensuring
 
 | View Name | Description |
 |------------|-------------|
-| `VW_TOTAL_VIDEOS` | Total number of unique videos. |
-| `VW_TOTAL_VIEWS_BY_CLAIM` | Total view count and video count by claim status. |
-| `VW_TRENDS_AUTHOR_BAN` | Counts of videos by claim status × author ban status. |
-| `VW_CLAIM_VERIFICATION` | Counts of videos by claim status × verification status. |
-| `VW_LIKE_COUNT_BY_AUTHOR_BAN` | Raw like values by author ban status (for histogram binning). |
-| `VW_OPINION_LIKES` / `VW_CLAIM_LIKES` | Total likes for opinion / claim videos. |
-| `VW_OPINION_COMMENTS` / `VW_CLAIM_COMMENTS` | Total comments for opinion / claim videos. |
+| `VW_TOTAL_VIDEOS` | Returns the total distinct number of videos in the dataset. Used for KPI card in Power BI. |
+| `VW_TOTAL_VIEWS_BY_CLAIM` | Shows the proportion of total video views by claim status (used for pie chart). |
+| `VW_TRENDS_AUTHOR_BAN` | Analyzes video distribution by author ban and claim status (stacked bar visualization). |
+| `VW_CLAIM_VERIFICATION` | Compares number of videos by claim status × verification status (matrix or grouped bar). |
+| `VW_LIKE_COUNT_BY_AUTHOR_BAN` | Provides raw like counts per author ban status for histogram binning. |
+| `VW_OPINION_LIKES` | Calculates total likes for videos with claim status = ‘opinion’. Used for KPI comparison. |
+| `VW_CLAIM_LIKES` | Calculates total likes for videos with claim status = ‘claim’. Used for KPI comparison. |
+| `VW_OPINION_COMMENTS` | Calculates total comment counts for videos with claim status = ‘opinion’. Used for KPI comparison. |
+| `VW_CLAIM_COMMENTS` | Calculates total comment counts for videos with claim status = ‘claim’. Used for KPI comparison. |
+| `VW_COMMENT_COUNT_BY_AUTHOR_BAN` | Aggregates total number of comments by author ban status (used for “Do active authors get more comments?” visual). |
+| `VW_LIKE_COUNT_BY_CLAIM_STATUS` | Aggregates total likes by claim status to compare audience appreciation across content types. |
+| `VW_COMMENT_COUNT_BY_CLAIM_STATUS` | Aggregates total comments by claim status for engagement comparison between claim and opinion content. |
+| `VW_COMMENTS_BY_CLAIM_AND_AUTHOR_BAN` | Calculates total comments by claim status × author ban status (cross-performance analysis). |
 
 ![Views in Snowflake](visuals/views.png)
 
