@@ -173,3 +173,85 @@ JOIN DW.DIM_CLAIM_STATUS cs ON cs.CLAIM_STATUS_KEY = f.CLAIM_STATUS_KEY
 WHERE cs.CLAIM_STATUS = 'claim'
 GROUP BY cs.CLAIM_STATUS;
 
+
+-- ==========================================================
+-- 🔹 10) Comments by author ban status
+-- Purpose:
+--   - Calculate total number of comments aggregated by AUTHOR_BAN_STATUS.
+--   - Supports visual: "Do videos from active, banned, or under-review authors get more comments?"
+-- Expected outcome:
+--   - One row per AUTHOR_BAN_STATUS with TOTAL_COMMENTS.
+-- ==========================================================
+CREATE OR REPLACE VIEW PRESENTATION.VW_COMMENT_COUNT_BY_AUTHOR_BAN AS
+SELECT
+    ab.AUTHOR_BAN_STATUS,
+    SUM(f.VIDEO_COMMENT_COUNT) AS TOTAL_COMMENTS
+FROM DW.FACT_VIDEO_ENGAGEMENT f
+JOIN DW.DIM_AUTHOR_BAN_STATUS ab
+  ON ab.AUTHOR_BAN_STATUS_KEY = f.AUTHOR_BAN_STATUS_KEY
+GROUP BY ab.AUTHOR_BAN_STATUS
+ORDER BY TOTAL_COMMENTS DESC;
+
+-- ==========================================================
+-- 🔹 11) Likes by claim status
+-- Purpose:
+--   - Calculate total number of likes aggregated by CLAIM_STATUS (claim vs. opinion).
+--   - Used to compare audience appreciation across content types.
+-- Expected outcome:
+--   - Two rows: one for 'claim' and one for 'opinion' videos, each showing TOTAL_LIKES.
+-- ==========================================================
+CREATE OR REPLACE VIEW PRESENTATION.VW_LIKE_COUNT_BY_CLAIM_STATUS AS
+SELECT
+    cs.CLAIM_STATUS,
+    SUM(f.VIDEO_LIKE_COUNT) AS TOTAL_LIKES
+FROM DW.FACT_VIDEO_ENGAGEMENT f
+JOIN DW.DIM_CLAIM_STATUS cs
+  ON cs.CLAIM_STATUS_KEY = f.CLAIM_STATUS_KEY
+GROUP BY cs.CLAIM_STATUS
+ORDER BY TOTAL_LIKES DESC;
+
+-- ==========================================================
+-- 🔹 12) Comments by claim status
+-- Purpose:
+--   - Calculate total number of comments aggregated by CLAIM_STATUS (claim vs. opinion).
+--   - Used for comparison of audience engagement between claim and opinion videos.
+-- Expected outcome:
+--   - Two rows: one for 'claim' and one for 'opinion' videos, each showing TOTAL_COMMENTS.
+-- ==========================================================
+CREATE OR REPLACE VIEW PRESENTATION.VW_COMMENT_COUNT_BY_CLAIM_STATUS AS
+SELECT
+    cs.CLAIM_STATUS,
+    SUM(f.VIDEO_COMMENT_COUNT) AS TOTAL_COMMENTS
+FROM DW.FACT_VIDEO_ENGAGEMENT f
+JOIN DW.DIM_CLAIM_STATUS cs
+  ON cs.CLAIM_STATUS_KEY = f.CLAIM_STATUS_KEY
+GROUP BY cs.CLAIM_STATUS
+ORDER BY TOTAL_COMMENTS DESC;
+
+
+-- ==========================================================
+-- 🔹 13) Comments by claim status and author ban status
+-- Purpose:
+--   - Calculate total comments grouped by CLAIM_STATUS and AUTHOR_BAN_STATUS.
+--   - Used for visual: "How do claim/opinion content types perform across author statuses?"
+-- Expected outcome:
+--   - Multiple rows combining claim/opinion with author ban categories,
+--     each showing TOTAL_COMMENTS for that group.
+-- ==========================================================
+CREATE OR REPLACE VIEW PRESENTATION.VW_COMMENTS_BY_CLAIM_AND_AUTHOR_BAN AS
+SELECT
+    cs.CLAIM_STATUS,
+    ab.AUTHOR_BAN_STATUS,
+    SUM(f.VIDEO_COMMENT_COUNT) AS TOTAL_COMMENTS
+FROM DW.FACT_VIDEO_ENGAGEMENT f
+JOIN DW.DIM_CLAIM_STATUS cs
+  ON cs.CLAIM_STATUS_KEY = f.CLAIM_STATUS_KEY
+JOIN DW.DIM_AUTHOR_BAN_STATUS ab
+  ON ab.AUTHOR_BAN_STATUS_KEY = f.AUTHOR_BAN_STATUS_KEY
+GROUP BY cs.CLAIM_STATUS, ab.AUTHOR_BAN_STATUS
+ORDER BY cs.CLAIM_STATUS, TOTAL_COMMENTS DESC;
+
+
+
+
+
