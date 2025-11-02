@@ -50,7 +50,7 @@ The initial dataset `TIKTOK_RAW` contains video-level information such as:
 
 ---
 
-### **2. Data Warehouse Layer (DW schema)**
+### **2. Data Warehouse Layer (Snowflake – DW schema)**
 Transformed data is modeled into a **star schema**, consisting of:
 - One **fact table**: `FACT_VIDEO_ENGAGEMENT`  
 - Four **dimension tables**: `DIM_VIDEO`, `DIM_CLAIM_STATUS`, `DIM_VERIFIED_STATUS`, and `DIM_AUTHOR_BAN_STATUS`
