@@ -166,10 +166,9 @@ These read-only views simplify BI development by providing **ready-to-visualize 
 
 ### 🖼️ Dashboard Preview
 
-**Main Report Page:**  
 Visualizes patterns across claim types and author statuses.
 
-![Power BI TikTok Engagement Dashboard](Zrzut%20ekranu%202025-11-04%20105855.png)
+![Power BI TikTok Engagement Dashboard](visuals/report1.png)
 
 ---
 
