@@ -1,4 +1,4 @@
-# 🎥 TikTok Analytics Report (Snowflake + Power BI)
+# 🎥 TikTok Analytics Report (Snowflake + SQL + Power BI)
 
 ## 🧭 Overview
 This project presents a **TikTok Analytics Dashboard** built using **Snowflake** for data warehousing and **Power BI** for reporting.  
