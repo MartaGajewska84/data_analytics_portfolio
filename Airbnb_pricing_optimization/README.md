@@ -36,7 +36,7 @@ To answer this, the project:
 
 | File | Description |
 |------|-------------|
-| `florence_pricing_optimization.ipynb` | Main notebook: EDA, elasticity estimation, pricing simulations. |
+| `airbnb_pricing_optimization.ipynb` | Main notebook: EDA, elasticity estimation, pricing simulations. |
 | `listings.csv` | Airbnb listings (Florence). Used attributes: `id`, `price`, `number_of_reviews`, `neighbourhood`. |
 | `reviews.csv` | Airbnb reviews. Used attributes: `listing_id`, `date` → transformed into `month`, `review_count`. |
 
