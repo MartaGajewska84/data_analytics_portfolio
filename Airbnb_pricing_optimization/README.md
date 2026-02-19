@@ -102,8 +102,10 @@ This function calculates, for each price change:
 
 **Bar charts:**
 
-- Estimated bookings vs. price change  
+- Estimated bookings vs. price change
+  ![](visuals/bookings_vs_price_change.png)
 - Expected revenue vs. price change
+  ![](visuals/revenue_vs_price_change.png)
 
 ---
 
@@ -126,6 +128,7 @@ For each district, the function:
   - **Optimal % price change**
   - **Maximum revenue per district**
 - **Heatmap of results**
+  ![](visuals/district_level_simulation.png)
 
 ---
 
@@ -149,7 +152,9 @@ For each **(neighbourhood, month)**, the function computes:
 **Focused visualizations for:**
 
 - **Campo di Marte**
+  ![](visuals/campo_di_marte.png)
 - **Centro Storico**
+  ![](visuals/centro_storico.png)
 
 **Examples:**
 
