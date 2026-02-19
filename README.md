@@ -11,6 +11,8 @@ Each project focuses on a specific **business domain** (such as HR, sales, or ma
 |----------|--------------|--------|
 | [HR Analytics Report](./HR_analytics_report) | Workforce insights report analyzing headcount, demographics, and attrition trends. | Power BI, DAX, Power Query |
 | [TikTok Analytics Report](./TikTok_analytics_report) | End-to-end data warehouse and BI solution analyzing TikTok video engagement — including views, likes, shares, and comments — using Snowflake and Power BI. | Snowflake, SQL, Power BI |
+| [Airbnb Pricing Optimization](./Airbnb_pricing_optimization) | Pricing optimization and demand modeling project analyzing Airbnb listings in Florence. Built regression models to estimate the impact of price, availability, and minimum stay on booking demand and revenue optimization. | Python, Pandas, NumPy, Matplotlib, Seaborn |
+
 ---
 
 ## 🛠️ Tools & Technologies
