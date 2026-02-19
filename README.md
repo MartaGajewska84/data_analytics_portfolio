@@ -20,7 +20,12 @@ Each project focuses on a specific **business domain** (such as HR, sales, or ma
 - **Power Query (M)** — data cleaning and transformation  
 - **DAX** — measures and KPIs
 - **SQL** — data warehouse modeling, ETL, and analytics  
-- **Snowflake** — cloud data warehouse for scalable data processing  
+- **Snowflake** — cloud data warehouse for scalable data processing
+- **Python** — data analysis and modeling  
+- **Pandas** — data manipulation and preprocessing  
+- **NumPy** — numerical computing  
+- **Matplotlib & Seaborn** — data visualization and exploratory analysis  
+
 
 ---
 
