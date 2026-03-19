@@ -1,17 +1,33 @@
-# 🎯 Data Analytics Portfolio — Marta Gajewska
+🎯 Data Analytics Portfolio — Marta Gajewska
 
-Hello! I'm **Marta Gajewska**, and this is my data analytics portfolio — a collection of projects that showcase how I turn data into clear, actionable business insights.  
-Each project focuses on a specific **business domain** (such as HR, sales, or marketing) and demonstrates the full analytical process — from data modeling and transformation to visualization and interpretation.
+Hi! I’m Marta, a Data Analyst specializing in SQL, Python, and Power BI.
+
+I build end-to-end analytics solutions — from data cleaning and modeling to interactive dashboards and business insights. My work focuses on solving real-world problems such as pricing optimization, performance analysis, and business intelligence reporting.
+
+Each project in this portfolio demonstrates the full analytical workflow:
+data preparation → exploration → modeling → visualization → actionable insights.
+
+🔍 Tools & Technologies:
+SQL • Python (Pandas, NumPy) • Power BI • Snowflake • DAX • ETL
+
+📊 What you’ll find here:
+- Pricing optimization models (Airbnb case study)
+- Data warehouse & BI solutions (TikTok analytics)
+- Interactive dashboards (HR analytics)
+
+My goal is to turn data into clear, actionable insights that support better business decisions.
+
+📬 Let’s connect: [https://www.linkedin.com/in/marta-gajewska-43057a19a ]
 
 ---
 
-## 📂 Projects Overview
+## 📁 Projects Overview
 
 | Project | Description | Tools |
-|----------|--------------|--------|
-| [HR Analytics Report](./HR_analytics_report) | Workforce insights report analyzing headcount, demographics, and attrition trends. | Power BI, DAX, Power Query |
-| [TikTok Analytics Report](./TikTok_analytics_report) | End-to-end data warehouse and BI solution analyzing TikTok video engagement — including views, likes, shares, and comments — using Snowflake and Power BI. | Snowflake, SQL, Power BI |
-| [Airbnb Pricing Optimization](./Airbnb_pricing_optimization) | Pricing optimization and demand modeling project analyzing Airbnb listings in Florence. Built regression models to estimate the impact of price, availability, and minimum stay on booking demand and revenue optimization. | Python, Pandas, NumPy, Matplotlib, Seaborn |
+|--------|------------|-------|
+| [**HR Analytics Report**](./HR_analytics_report) | Developed an interactive HR dashboard to analyze headcount, demographics, and attrition, enabling data-driven workforce insights and decision-making. | Power BI, DAX, Power Query |
+| [**TikTok Analytics Report**](./TikTok_analytics_report) | Built an end-to-end data warehouse and BI solution to analyze video engagement metrics (views, likes, shares), supporting performance analysis and business insights. | Snowflake, SQL, Power BI |
+| [**Airbnb Pricing Optimization**](./Airbnb_pricing_optimization) | Designed a pricing optimization model to estimate demand elasticity and identify optimal price strategies, increasing revenue potential through data-driven decision-making. | Python, Pandas, NumPy, Matplotlib, Seaborn |
 
 ---
 
