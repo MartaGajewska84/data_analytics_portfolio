@@ -17,7 +17,7 @@ SQL • Python (Pandas, NumPy) • Power BI • Snowflake • DAX • ETL
 
 My goal is to turn data into clear, actionable insights that support better business decisions.
 
-📬 Let’s connect: [https://www.linkedin.com/in/marta-gajewska-43057a19a ]
+📬 Let’s connect: [LinkedIn](https://www.linkedin.com/in/marta-gajewska-43057a19a)
 
 ---
 
