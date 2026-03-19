@@ -1,6 +1,8 @@
-🎯 Data Analytics Portfolio — Marta Gajewska
+## 🎯 Data Analytics Portfolio — Marta Gajewska
 
 Hi! I’m Marta, a Data Analyst specializing in SQL, Python, and Power BI.
+
+I focus on applying analytical techniques to real-world datasets to generate insights that support business decision-making.
 
 I build end-to-end analytics solutions — from data cleaning and modeling to interactive dashboards and business insights. My work focuses on solving real-world problems such as pricing optimization, performance analysis, and business intelligence reporting.
 
@@ -15,13 +17,15 @@ SQL • Python (Pandas, NumPy) • Power BI • Snowflake • DAX • ETL
 - Data warehouse & BI solutions (TikTok analytics)
 - Interactive dashboards (HR analytics)
 
-My goal is to turn data into clear, actionable insights that support better business decisions.
+My goal is to deliver clear, actionable insights that drive better business decisions.
 
 📬 Let’s connect: [LinkedIn](https://www.linkedin.com/in/marta-gajewska-43057a19a)
 
 ---
 
 ## 📁 Projects Overview
+
+💡 Each project includes detailed analysis, code, and visualizations.
 
 | Project | Description | Tools |
 |--------|------------|-------|
@@ -47,7 +51,7 @@ My goal is to turn data into clear, actionable insights that support better busi
 
 ## 📫 Connect with Me
 📍 Ożarów Mazowiecki, Poland  
-🔗 [LinkedIn](www.linkedin.com/in/marta-gajewska-43057a19a)  
+🔗 [LinkedIn](https://www.linkedin.com/in/marta-gajewska-43057a19a)  
 💻 [GitHub](https://github.com/MartaGajewska84)
 
 
